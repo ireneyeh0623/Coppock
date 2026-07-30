@@ -278,7 +278,7 @@ else:
             font=dict(color=tok['text'], family='Lora, serif'),
             # 關鍵：將 xaxis 類型設為 category，配合 Date_Str 使用以忽略非交易月
             xaxis=dict(
-                title="月",
+                title=dict(text="月", font=dict(color=tok['text'])),
                 type='category',
                 color=tok['text'],
                 tickfont=dict(color=tok['text']),
@@ -286,7 +286,7 @@ else:
                 nticks=8  # 限制顯示的座標標籤數量，避免字體重疊
             ),
             yaxis=dict(
-                title="%",
+                title=dict(text="%", font=dict(color=tok['text'])),
                 color=tok['text'],
                 tickfont=dict(color=tok['text']),
                 gridcolor=tok['grid_line'],
